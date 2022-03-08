@@ -1,23 +1,17 @@
-# Storage Services:
+# Storage Services   
 
-## Key Services
+## Simple Storage Service 
 
-* Simple Storage Service
-* Glacier
-* CloudFront
-* Elastic Block Store (EBS)
-* Storage Gateway
-* Snow Family
-* Database
+* Glacier  
+* CloudFront  
+* Elastic Block Store (EBS)  
+* Storage Gateway  
+* Snow family  
+* Databases 
+  
+### S3: 
+The S3 (Simple Storage Service) service provides storage for objects (files) 
 
-## Storage
-
-### Block Storage
-
-* Used on local networks (iSCSI, Fibre Channel)
-
-### File Storage
-
-* Object storage in S3
-
-
+### EBS: 
+Block storage is provided using the Elasic Block Store. 
+Select storage services based on capacity (size), performance and cost 
