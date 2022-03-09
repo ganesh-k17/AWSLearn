@@ -29,3 +29,14 @@ Create EFS => Mount on EC2/ECS/EKS/Fargate/Lambda => Test and optimize => Move d
     - EFS is like NAS storage within the cloud for the cloud.
 	- EFS can be accessed through the NFSv4 protocol.
 	- EC2 instances can connect to EFS shares, but it is not supported on windows instances.
+
+## Lab
+
+- Create EFS shares using the Amazon EFS console in AWS
+- EFS shares can be limited to a VPC
+- Like other AWS services, EFS shares can be tagged for better management and location
+
+# EFS and Privatelink:
+
+- Endpoints are created within you virtual private cloud (VPC)
+- Privatelink allows for secure connection between VPCs, services and applications in AWS
