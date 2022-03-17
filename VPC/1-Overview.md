@@ -108,6 +108,11 @@
 
 * Each ENI is associated with a subnet within the VPC just as a physical network interface would be associated with a subnet on a local network. 
 
+Endpoints:
+
+* One VPC may need to provide access for its instances to a service in another VPC and this can be accomplished with Endpoints
+* Endpoints, in AWS, are not the same as endpoints in common local networking terminology.  They are more like proxies to services.
+* With Endpoints, services are specified based on region and service name.
  
 
  
