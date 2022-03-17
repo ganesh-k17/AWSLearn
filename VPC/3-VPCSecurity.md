@@ -22,3 +22,42 @@
 * Rule number defines precedence
 * Lowest numbered rules first
 * First match applies
+
+# NAT: (Network Address Translation)
+
+* is used to interconnect Point private networks and public networks
+* An Elastic IP (EIP)  is associated with the NAT instance for the public-facing side.
+* Instances in the private subnet of the VPC use the NAT to connect to the internet
+* NAT can be implemented using a ddicated NAT instance or using an AWS NAT Gateway
+
+# Gateways
+
+* AWS supports gateways to connect to the VPC from the local networks
+* Gateways are effectively VPN endpoints.
+
+* VPG (Virtual Private Gateway) - is implemented in the Cloud
+* CGW (Customer Gateway) - is implemented in the customer network
+
+# VPG (Virtual Private Gateway)
+
+* Connects local network to the VPC
+* VPG is the VPN concntrator
+
+# CGW: (Customer Gateway)
+
+* Physical device or software application.
+* Anchor on the customer side
+	- Connects to the VPG
+
+# Alternative connections
+
+* AWS hardware VPN
+* AWS Direct Connect
+* VPN CloudHub
+* Software VPN (L2TP - Layer 2 Tunneling Protocol, ipSec)
+
+# VPN configuration options
+
+* Split-tunnel gives flexibility for ruouting traffic aross the Virtual Private Network (VPN), specifically for traffic going directly out to the Internet
+* AWS has now enabled certificates for authentication to the VPN
+* Direct Connect bypasses traditional Internet Service Provider (ISP) Internet connection and connects straight into AWS.
