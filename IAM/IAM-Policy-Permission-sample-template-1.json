@@ -1,0 +1,24 @@
+{
+    "Version" : "2012-10-17",
+    "Statement" : [
+        {
+            "Effect": "Allow",
+            "Action": "ec2:Decribe*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "elasticloadbalancing:Decribe*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:ListMetrics",
+                "cloudwatch:GetMetricStatistics",
+                "cloudwatch:Describe*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
