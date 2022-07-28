@@ -2,33 +2,33 @@
 
 Identity and Access Management, Global service
 
-## Users and Groups:
+## Users and Groups
 
 * Root account created by default, shouldn't be used or shared
 * Users are people within your organization,  and can be grouped.
 * Groups only contain users not other groups
-* Users don't need to have to belong to a group and user can belog to multiple groups.
+* Users don't need to have to belong to a group and user can belong to multiple groups.
 
 ## Permissions
 
-* Users or Groups can be assigned JSON documents called policies. (Sample in IAM-Policuy_Permission-sample-template.json)
+* Users or Groups can be assigned JSON documents called policies. (Sample in IAM-Policy_Permission-sample-template.json)
 * These policies define the permissions of the users
 * In AWS you apply the least privilege principle: don't give more permissions than a user needs.
 
-## IAM Policy structure:
+## IAM Policy structure
 
-* Consists of 
-    - Version: policy language version always include "2012-10-17"
-    - Id: and identifier for the policy (optional)
-    - Statement: one or more individual statements (required)
+* Consists of
+    * Version: policy language version always include "2012-10-17"
+    * Id: and identifier for the policy (optional)
+    * Statement: one or more individual statements (required)
 
 * Statements consists of,
-    - Sid: and identfier for the statements (optional)
-    - Effect: wheterh the statemnt allows or denies access (Allow, Deny)
-    - Principal: account/user.role to which this policy applied to 
-    - Action: list of actions this policy allows or denies
-    - Resource: list of resources to which the actions applied to. 
-    - Condition: conditions for when this policy is in effect.
+    * Sid: and identifier for the statements (optional)
+    * Effect: whether the statement allows or denies access (Allow, Deny)
+    * Principal: account/user.role to which this policy applied to
+    * Action: list of actions this policy allows or denies
+    * Resource: list of resources to which the actions applied to.
+    * Condition: conditions for when this policy is in effect.
 
     ```json
     {
@@ -129,4 +129,3 @@ Identity and Access Management, Global service
 * Security: MFA + Password policy
 * Access Keys: Access AWS using the CLI or SDK
 * Audit: IAM Credential Reports & IAM Access Advisor
-*  
