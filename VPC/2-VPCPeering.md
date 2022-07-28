@@ -1,7 +1,7 @@
 # VPC Peering
 
 * Connects one VPC to another
-* Many possible scenarios, 
+* Many possible scenarios,
     - Management VPC > Production VPC
     - Devlopment VPC > Prodcution VPC
     - Corporate VPC > Partner VPC
